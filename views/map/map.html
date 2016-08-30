@@ -1,0 +1,37 @@
+<ion-view view-title="地图">
+    <ion-content>
+        <ion-list class="list">
+            <label class="item item-input">
+                <i class="icon ion-search placeholder-icon"></i>
+                <input type="text" placeholder="搜索地点或地址">
+            </label>
+        </ion-list>
+        <ion-scroll zooming="true" direction="xy" style="width:100%;height:200px;overflow: hidden;"  class="has-header has-footer">
+            <div style="width:1903px;height:930px;">
+                <img ng-src="images/map.png">
+            </div>
+        </ion-scroll>
+        <ion-list class="list pic has-header">
+            <ion-item class="item">
+                <h2>时代广场</h2>
+                <p>Manhattan, New York, NY 10036, United States</p>
+            </ion-item>
+            <ion-item class="item">
+                <h2>中央公园</h2>
+                <p>Central Park, New York</p>
+            </ion-item>
+            <ion-item class="item">
+                <h2>大都会博物馆</h2>
+                <p>1000 5th Ave, New York, NY 10028, United States</p>
+            </ion-item>
+            <ion-item class="item">
+                <h2>华尔街</h2>
+                <p>Wall Street, New York</p>
+            </ion-item>
+            <ion-item class="item">
+                <h2>布鲁克林大桥</h2>
+                <p>Brooklyn Bridge, New York</p>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

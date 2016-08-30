@@ -1,0 +1,56 @@
+{
+  "totalPages": 30,
+  "currentPage": 1,
+  "restaurants": [
+    {
+      "name": "First Starbucks Store",
+      "address": "Pike Place Market, 1912 Pike Place, Seattle, WA 98101",
+      "image_url": "images/First Starbucks Store.jpg"
+    },
+    {
+      "name": "Neptune Oyster",
+      "address": "63 Salem Street, Boston, MA 02113",
+      "image_url": "images/Neptune Oyster.jpg"
+    },
+    {
+      "name": "Peter Luger Steak House(Brooklyn)",
+      "address": "178 Broadway, Brooklyn, NY 11211",
+      "image_url": "images/Peter Luger Steak House.jpg"
+    },
+    {
+      "name": "Old Ebbitt Grill",
+      "address": "675 15th Street Northwest, Washington, DC 20005",
+      "image_url": "images/Old Ebbitt Grill.jpg"
+    },
+    {
+      "name": "Shake Shack(Theater District)",
+      "address": "691 8th Ave, New York, NY 10036",
+      "image_url": "images/Shake Shack.jpg"
+    },
+    {
+      "name": "Joe's Crab Shack",
+      "address": "245 Jefferson St, San Francisco, CA 94133",
+      "image_url": "images/Joe's Crab Shack.jpg"
+    },
+    {
+      "name": "Alioto's Waterside Cafe",
+      "address": "2829 Taylor St, San Francisco, CA 94133",
+      "image_url": "images/Alioto's Waterside Cafe.jpg"
+    },
+    {
+      "name": "Crab House",
+      "address": "203C Pier 39 San Francisco, CA 94133",
+      "image_url": "images/Crab House.jpg"
+    },
+    {
+      "name": "The Cheesecake Factory",
+      "address": "251 Geary St, 8th Fl, Union Square, San Francisco, CA 94102",
+      "image_url": "images/The Cheesecake Factory.jpg"
+    },
+    {
+      "name": "Gray's Papaya",
+      "address": "2090 Broadway, New York, NY 10023",
+      "image_url": "images/Gray's Papaya.jpg"
+    }
+  ]
+}

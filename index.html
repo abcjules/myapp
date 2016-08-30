@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myapp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Title</title>
+    <link href="lib/ionic/css/ionic.min.css" rel="stylesheet">
+    <script src="lib/ionic/js/ionic.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="views/travel/travel.js"></script>
+    <script src="views/strategy/strategy.js"></script>
+    <script src="views/map/map.js"></script>
+    <script src="views/restaurant/restaurant.js"></script>
+    <script src="views/weather/weather.js"></script>
+    <script src="views/content/content.js"></script>
+    <script src="views/strategy/strategy.js"></script>
+    <script src="views/recommend/recommend.js"></script>
+    <script src="views/recommend2/recommend2.js"></script>
+    <script src="views/recommend3/recommend3.js"></script>
+    <script src="views/tour/tour.js"></script>
+
+
+    <style>
+        *{margin:0;padding:0;}
+        .box,.box img{width:100%;height:100%;}
+        .pic .ion i{margin:0 5px;line-height:30px;}
+        .pic h2{font-size: 15px;font-weight:600;line-height:20px;}
+        .pic p{font-size: 15px;line-height:20px;}
+        .text{text-align: center;}
+        .text h2{font-size: 40px;font-weight: bold;line-height:40px;}
+        .text p{font-size: 20px;line-height:30px;}
+        .text img{width:100%;height:100%;}
+        .strategypic img{width:100%;height:100%;}
+        .recommend img{width:100%;height:100%;}
+        .recommend h3{font-size: 20px;font-weight: bold;line-height:40px;}
+        .recommend p{font-size: 20px;line-height:30px;}
+        .picstyle{width:100%;height:100%;}
+        .picstyle img{width:100%;height:100%;}
+    </style>
+</head>
+<body>
+
+<!--侧导航栏-->
+<ion-side-menus>
+    <!--中间-->
+    <ion-side-menu-content>
+        <!--导航栏-->
+        <ion-nav-bar class="bar-calm">
+            <ion-nav-back-button class="button button-clear">
+                <i class="icon ion-ios-arrow-left"></i>
+            </ion-nav-back-button>
+        </ion-nav-bar>
+        <!--导航视图-->
+        <ion-nav-view>
+
+        </ion-nav-view>
+    </ion-side-menu-content>
+
+    <!--左侧-->
+    <ion-side-menu side="left">
+        <ion-header-bar class="bar bar-calm">
+            <h1 class="title">设置</h1>
+        </ion-header-bar>
+        <ul class="list has-header">
+            <li class="item item-icon-left" menu-close>
+                <i class="icon ion-arrow-return-right calm"></i>返回首页
+            </li>
+            <li class="item item-toggle item-icon-left">
+                <i class="icon ion-wifi calm"></i>
+                WIFI
+                <label class="toggle toggle-calm">
+                    <input type="checkbox">
+                    <div class="track">
+                        <div class="handle"></div>
+                    </div>
+                </label>
+            </li>
+
+            <li class="item item-toggle item-icon-left">
+                <i class="icon ion-plane calm"></i>
+                飞行模式
+                <label class="toggle toggle-calm">
+                    <input type="checkbox">
+                    <div class="track">
+                        <div class="handle"></div>
+                    </div>
+                </label>
+            </li>
+            <li class="item item-toggle item-icon-left">
+                <i class="icon ion-bluetooth calm"></i>
+                蓝牙
+                <label class="toggle toggle-calm">
+                    <input type="checkbox">
+                    <div class="track">
+                        <div class="handle"></div>
+                    </div>
+                </label>
+            </li>
+        </ul>
+    </ion-side-menu>
+
+    <!--右侧-->
+    <ion-side-menu side="right">
+        <ion-header-bar class="bar bar-calm">
+            <h1 class="title">更多</h1>
+        </ion-header-bar>
+        <ul class="list has-header">
+            <li class="item item-icon-left" menu-close>
+                <i class="icon ion-ios-people calm"></i>
+                关于我们
+            </li>
+            <li class="item item-icon-left" menu-close>
+                <i class="icon ion-ios-home-outline calm"></i>
+                官方微博
+            </li>
+            <li class="item item-icon-left" menu-close>
+                <i class="icon ion-help calm"></i>
+                常见问题
+            </li>
+        </ul>
+    </ion-side-menu>
+</ion-side-menus>
+</body>
+</html>

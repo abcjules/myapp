@@ -1,0 +1,55 @@
+<ion-view view-title="游记">
+    <ion-nav-buttons side="right">
+        <a class="button button-clear button-icon ion-navicon-round" menu-toggle="right"></a>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="left">
+        <a class="button button-clear button-icon ion-ios-gear-outline" menu-toggle="left"></a>
+    </ion-nav-buttons>
+    <ion-content>
+        <ion-slide-box class="box"
+                       auto-play="true"
+                       slide-interval="2000"
+                       does-continue="true"
+                       active-slide="data.page"
+                       on-slide-changed="slideChanged(index)"
+                       pager-click="pagerClick(index)"
+        >
+            <ion-slide>
+                <div class="box"><img src="images/b.jpeg"></div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="box"><img src="images/w.jpeg"></div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="box"><img src="images/n.jpeg"></div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="box"><img src="images/y.jpeg"></div>
+            </ion-slide>
+        </ion-slide-box>
+
+        <!--下拉刷新-->
+        <ion-refresher pulling-text="下拉刷新" pulling-icon="ion-load-c" on-refresh="refresh()"></ion-refresher>
+
+        <ion-list class="list pic">
+            <ion-item class="item item-thumbnail-left" ng-repeat="product in products" ui-sref="home.content">
+                <img ng-src="{{product.img}}">
+                <h2>{{product.headline}}</h2>
+                <p>{{product.content}}</p>
+                <div class="ion">
+                    <i class="icon ion-ios-location"></i>成都
+                    <i class="icon ion-ios-heart assertive"></i>赞
+                    <i class="icon ion-ios-chatbubble-outline"></i>评论
+                    <i class="icon ion-ios-redo-outline"></i>转发
+                    <i class="icon ion-ios-eye">1024/32</i>
+                </div>
+            </ion-item>
+
+        <!--无限滚动-->
+        <ion-infinite-scroll on-infinite="loadMore(product)" immediate-check="false"></ion-infinite-scroll>
+        </ion-list>
+    </ion-content>
+</ion-view>

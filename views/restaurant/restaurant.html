@@ -1,0 +1,16 @@
+<ion-view view-title="美食推荐">
+    <ion-content>
+        <div class="list card" ng-repeat="restaurant in restaurants">
+            <div class="item item-divider">
+                <h2 style="font-weight:bold;font-size:20px;font-style:italic;">{{restaurant.name}}</h2>
+                <p style="font-style:italic;">{{restaurant.address}}</p>
+            </div>
+            <div class="item item-image">
+                <img ng-src="{{restaurant.image_url}}"/>
+            </div>
+        </div>
+
+        <!--无限滚动:如果所有的页面都加载完了(例如，共30页)，则不再出现此组件-->
+        <ion-infinite-scroll on-infinite="getRestaurants()" ng-if="total>page" immediate-check="false"></ion-infinite-scroll>
+    </ion-content>
+</ion-view>

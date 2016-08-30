@@ -1,0 +1,11 @@
+<ion-view view-title="The Paradise" id="slide-view">
+    <ion-nav-buttons side="right">
+        <a class="button button-clear" ui-sref="home.travel" ng-if="change">进入</a>
+    </ion-nav-buttons>
+
+    <ion-slide-box on-slide-changed="Show()" class="picstyle">
+        <ion-slide ng-repeat="product in products">
+            <img ng-src="{{product.img}}">
+        </ion-slide>
+    </ion-slide-box>
+</ion-view>

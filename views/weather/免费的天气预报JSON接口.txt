@@ -1,0 +1,7 @@
+http://wthrcdn.etouch.cn/weather_mini?city=北京
+通过城市名字获得天气数据，json数据
+
+http://wthrcdn.etouch.cn/weather_mini?citykey=101010100
+通过城市id获得天气数据，json数据
+
+110101001000
